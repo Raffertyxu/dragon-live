@@ -69,6 +69,7 @@
   });
 
   render();
+  window.CLG_COLLAB_RERENDER = render; // 試算表資料回來後重畫用
   var last = document.documentElement.lang;
   new MutationObserver(function () {
     if (document.documentElement.lang === last) return;
